@@ -9,7 +9,7 @@ function AdminLogin() {
 
   const handleLogin = async () => {
     try {
-      const res = await fetch("http://localhost:8080/admin/login", {
+      const res = await fetch("https://ecommerce-production-1b05.up.railway.app/admin/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

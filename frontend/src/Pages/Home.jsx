@@ -19,7 +19,7 @@ function Home() {
     const user = localStorage.getItem("user");
 
     if (!user) {
-      nav("/login");
+      nav("/home");
     }
   }, [nav]);
 

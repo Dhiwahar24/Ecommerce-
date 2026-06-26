@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:8080/auth";
+// const BASE_URL = "http://localhost:8080/auth";
+const BASE_URL = "https://ecommerce-production-1b05.up.railway.app/auth";
 
 export const registerUser = async (user) => {
   const res = await fetch(`${BASE_URL}/register`, {

@@ -26,18 +26,18 @@ function Signup() {
     }
 
     try {
-      const res = await axios.post("http://localhost:8080/auth/register", {
+      const res = await axios.post("https://ecommerce-production-1b05.up.railway.app/auth/register", {
         name: form.name,
         age: form.age,
         gender: form.gender,
         email: form.email,
         password: form.password
       });
-
+      console.log(res.data);
       alert(res.data);
 
       if (res.data === "REGISTER SUCCESS") {
-        nav("/login");
+        nav("/home");
       }
     } catch (err) {
       alert("Signup failed");

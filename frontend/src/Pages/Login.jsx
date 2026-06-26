@@ -11,7 +11,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:8080/auth/login", {
+      const res = await axios.post("https://ecommerce-production-1b05.up.railway.app/auth/login", {
         email,
         password
       });

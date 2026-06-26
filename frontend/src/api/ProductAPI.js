@@ -1,5 +1,5 @@
-const BASE_URL = "http://localhost:8080/products";
-
+// const BASE_URL = "http://localhost:8080/products";
+const BASE_URL = "https://ecommerce-production-1b05.up.railway.app/products";
 // GET all products
 export const getProducts = async () => {
   const res = await fetch(BASE_URL);
