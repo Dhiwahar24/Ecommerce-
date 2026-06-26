@@ -8,7 +8,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/products")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://ecommerce-git-auth-backend-updates-dhiwahar24s-projects.vercel.app"
+})
 public class ProductController {
 
     private final ProductRepository productRepository;

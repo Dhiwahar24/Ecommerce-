@@ -7,7 +7,10 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/admin")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "https://ecommerce-git-auth-backend-updates-dhiwahar24s-projects.vercel.app"
+})
 public class AdminController {
 
     @PostMapping("/login")
